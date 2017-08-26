@@ -11,8 +11,5 @@
 |
 */
 
-Route::get('/{version?}', 'HomeController@index');
-
-Route::get('testingv{version}', function($version){
-	return 'testing - v'.$version;
-});
+Route::get('/', 'HomeController@index');
+Route::get('/v{version?}', 'HomeController@index');

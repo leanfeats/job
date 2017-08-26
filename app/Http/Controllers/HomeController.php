@@ -9,7 +9,10 @@ class HomeController extends Controller
     public function index($version=1)
     {
     	$data = [];
-    	$data['version'] = $this->getVersion();
-    	return compact('data');
+    	$version = $this->getVersion();
+
+    	#$blade = 'layouts.'.$version.'.main';
+    	#return $blade;
+    	return view('home.index');
     }
 }
