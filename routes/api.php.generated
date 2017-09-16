@@ -1,0 +1,6 @@
+
+// ApiController
+Route::get('api/all-user', 'ApiController@getAllUser');
+Route::get('api/jobs', 'ApiController@getJobs');
+Route::post('api/jobs', 'ApiController@postJobs');
+Route::get('api/version', 'ApiController@getVersion');

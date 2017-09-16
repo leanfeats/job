@@ -13,3 +13,14 @@
 
 Route::get('/', 'HomeController@index');
 Route::get('/v{version?}', 'HomeController@index');
+
+Route::post('/authenticate', 'AuthenticateController@authenticate');
+
+Route::get('/api/user-from-token', function(){
+	return JWTAuth::parseToken()->authenticate();
+	#return \App\User::all();
+});
+
+Route::middleware('jwt.auth')->get('/api/sample', function (Request $request) {
+    return \App\User::all();
+});
