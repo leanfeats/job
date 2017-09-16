@@ -10,6 +10,33 @@ class HomeController extends Controller
     {
     	$data = [];
     	$data['version'] = $this->getVersion();
-    	return compact('data');
+
+    	foreach ($data as $version => $value) {
+
+    	}
+
+    	$version = value($value);
+
+    	switch ($version) {
+    		case 'v1':
+    			$version = 1;
+    			break;
+
+    		case 'v2':
+    			$version = 2;
+    			break;
+
+    		case 'v3':
+    			$version = 3;
+    			break;
+    		
+    		default:
+    			$version = 1;
+    			break;
+    	}
+
+    	$path = "v" . $version . '.' . "index";
+
+    	return view($path);
     }
 }
