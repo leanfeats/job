@@ -10,10 +10,10 @@
 
         <!-- CSS -->
         <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
-        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-        <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
-		<link rel="stylesheet" href="assets/css/form-elements.css">
-        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="{{asset('bootstrap/css/bootstrap.min.css') }}">
+        <link rel="stylesheet" href="{{asset('font-awesome/css/font-awesome.min.css') }}">
+		<link rel="stylesheet" href="{{asset('css/form-elements3.css') }}">
+        <link rel="stylesheet" href="{{asset('css/style3.css') }}">
 
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -24,136 +24,112 @@
 
         <!-- Favicon and touch icons -->
         <link rel="shortcut icon" href="assets/ico/favicon.png">
-        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{asset('ico/apple-touch-icon-144-precomposed3.png') }}">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{asset('ico/apple-touch-icon-114-precomposed3.png') }}">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{asset('ico/apple-touch-icon-72-precomposed3.png') }}">
+        <link rel="apple-touch-icon-precomposed" href="{{asset('ico/apple-touch-icon-57-precomposed3.png') }}">
 
     </head>
 
     <body>
 
-        <!-- Top content -->
+        <!-- Content -->
         <div class="top-content">
-        	<div class="container">
-                	
-                <div class="row">
-                    <div class="col-sm-8 col-sm-offset-2 text">
-                        <h1>Bootstrap Login &amp; Register Forms</h1>
-                        <div class="description">
-                        	<p>
-	                         	Free responsive template made with Bootstrap. 
-	                         	Download it on <a href="http://azmind.com" target="_blank">AZMIND</a>, 
-	                         	customize and use it as you like!
-                        	</p>
+            
+            <div class="inner-bg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-8 col-sm-offset-2 text">
+                            <a class="logo" href="index.html"></a>
+                            <h1><strong>Jobs</strong> Registration/Login Form</h1>
+                            <div class="description">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam turpis elit, interdum sit amet congue sed, molestie ac dolor.
+                                </p>
+                            </div>
+                            <div class="top-big-link">
+                                <a class="btn btn-link-1 launch-modal" href="#" data-modal-id="modal-register">Register</a>
+                                <a class="btn btn-link-1 launch-modal" href="#" data-modal-id="modal-login">Login</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                
-                <div class="row">
-                    <div class="col-sm-10 col-sm-offset-1 show-forms">
-                    	<span class="show-register-form active">Register</span> 
-                    	<span class="show-forms-divider">/</span> 
-                    	<span class="show-login-form">Login</span>
-                    </div>
-                </div>
-                
-                <div class="row register-form">
-                    <div class="col-sm-4 col-sm-offset-1">
-						<form role="form" action="" method="post" class="r-form">
-	                    	<div class="form-group">
-	                    		<label class="sr-only" for="r-form-first-name">First name</label>
-	                        	<input type="text" name="r-form-first-name" placeholder="First name..." class="r-form-first-name form-control" id="r-form-first-name">
-	                        </div>
-	                        <div class="form-group">
-	                        	<label class="sr-only" for="r-form-last-name">Last name</label>
-	                        	<input type="text" name="r-form-last-name" placeholder="Last name..." class="r-form-last-name form-control" id="r-form-last-name">
-	                        </div>
-	                        <div class="form-group">
-	                        	<label class="sr-only" for="r-form-email">Email</label>
-	                        	<input type="text" name="r-form-email" placeholder="Email..." class="r-form-email form-control" id="r-form-email">
-	                        </div>
-	                        <div class="form-group">
-	                        	<label class="sr-only" for="r-form-about-yourself">About yourself</label>
-	                        	<textarea name="r-form-about-yourself" placeholder="About yourself..." 
-	                        				class="r-form-about-yourself form-control" id="r-form-about-yourself"></textarea>
-	                        </div>
-				            <button type="submit" class="btn">Sign me up!</button>
-						</form>
-                    </div>
-                    <div class="col-sm-6 forms-right-icons">
-						<div class="row">
-							<div class="col-sm-2 icon"><i class="fa fa-pencil"></i></div>
-							<div class="col-sm-10">
-								<h3>Beautiful Forms</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-sm-2 icon"><i class="fa fa-commenting"></i></div>
-							<div class="col-sm-10">
-								<h3>Awesome Login</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-sm-2 icon"><i class="fa fa-magic"></i></div>
-							<div class="col-sm-10">
-								<h3>Great Registration</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p>
-							</div>
-						</div>
-                    </div>
-                </div>
-                
-                <div class="row login-form">
-                    <div class="col-sm-4 col-sm-offset-1">
-						<form role="form" action="" method="post" class="l-form">
-	                    	<div class="form-group">
-	                    		<label class="sr-only" for="l-form-username">Username</label>
-	                        	<input type="text" name="l-form-username" placeholder="Username..." class="l-form-username form-control" id="l-form-username">
-	                        </div>
-	                        <div class="form-group">
-	                        	<label class="sr-only" for="l-form-password">Password</label>
-	                        	<input type="password" name="l-form-password" placeholder="Password..." class="l-form-password form-control" id="l-form-password">
-	                        </div>
-				            <button type="submit" class="btn">Sign in!</button>
-				    	</form>
-				    	<div class="social-login">
-                        	<p>Or login with:</p>
-                        	<div class="social-login-buttons">
-	                        	<a class="btn btn-link-1" href="#"><i class="fa fa-facebook"></i></a>
-	                        	<a class="btn btn-link-1" href="#"><i class="fa fa-twitter"></i></a>
-	                        	<a class="btn btn-link-1" href="#"><i class="fa fa-google-plus"></i></a>
-                        	</div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 forms-right-icons">
-						<div class="row">
-							<div class="col-sm-2 icon"><i class="fa fa-user"></i></div>
-							<div class="col-sm-10">
-								<h3>New Features</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-sm-2 icon"><i class="fa fa-eye"></i></div>
-							<div class="col-sm-10">
-								<h3>Easy To Use</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-sm-2 icon"><i class="fa fa-twitter"></i></div>
-							<div class="col-sm-10">
-								<h3>Social Integrated</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p>
-							</div>
-						</div>
-                    </div>
-                </div>
+            </div>
+            
+        </div>
+        
+        <!-- MODAL register-->
+        <div class="modal fade" id="modal-register" tabindex="-1" role="dialog" aria-labelledby="modal-register-label" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
                     
-        	</div>
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
+                        </button>
+                        <h3 class="modal-title" id="modal-register-label">Sign up now</h3>
+                        <p>Fill in the form below to get instant access:</p>
+                    </div>
+                    
+                    <div class="modal-body">
+                        
+                        <form role="form" action="" method="post" class="registration-form">
+                            <div class="form-group">
+                                <label class="sr-only" for="form-first-name">First name</label>
+                                <input type="text" name="form-first-name" placeholder="First name..." class="form-first-name form-control" id="form-first-name">
+                            </div>
+                            <div class="form-group">
+                                <label class="sr-only" for="form-last-name">Last name</label>
+                                <input type="text" name="form-last-name" placeholder="Last name..." class="form-last-name form-control" id="form-last-name">
+                            </div>
+                            <div class="form-group">
+                                <label class="sr-only" for="form-email">Email</label>
+                                <input type="text" name="form-email" placeholder="Email..." class="form-email form-control" id="form-email">
+                            </div>
+                            <div class="form-group">
+                                <label class="sr-only" for="form-about-yourself">About yourself</label>
+                                <textarea name="form-about-yourself" placeholder="About yourself..." 
+                                            class="form-about-yourself form-control" id="form-about-yourself"></textarea>
+                            </div>
+                            <button type="submit" class="btn">Sign me up!</button>
+                        </form>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+         <!-- MODAL login-->
+        <div class="modal fade" id="modal-login" tabindex="-1" role="dialog" aria-labelledby="modal-login-label" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
+                        </button>
+                        <h3 class="modal-title" id="modal-login-label">Login to our site</h3>
+                        <p>Enter your username and password to log on:</p>
+                    </div>
+                    
+                    <div class="modal-body">
+                        
+                        <form role="form" action="" method="post" class="login-form">
+                            <div class="form-group">
+                                <label class="sr-only" for="form-username">Username</label>
+                                <input type="text" name="form-username" placeholder="Username..." class="form-username form-control" id="form-username">
+                            </div>
+                            <div class="form-group">
+                                <label class="sr-only" for="form-password">Password</label>
+                                <input type="password" name="form-password" placeholder="Password..." class="form-password form-control" id="form-password">
+                            </div>
+                            <button type="submit" class="btn">Sign in!</button>
+                        </form>
+                        
+                    </div>
+                    
+                </div>
+            </div>
         </div>
 
         <!-- Footer -->
@@ -163,7 +139,7 @@
         			
         			<div class="col-sm-8 col-sm-offset-2">
         				<div class="footer-border"></div>
-        				<p>Made by <a href="http://azmind.com" target="_blank">AZMIND</a>.</p>
+        				<p class="m-0 text-center text-white">Copyright &copy; jobs 2017</p>
         			</div>
         			
         		</div>
@@ -171,11 +147,15 @@
         </footer>
 
         <!-- Javascript -->
-        <script src="assets/js/jquery-1.11.1.min.js"></script>
-        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-        <script src="assets/js/jquery.backstretch.min.js"></script>
-        <script src="assets/js/scripts.js"></script>
-        
+        <script src="{{asset('js/jquery-1.11.1.min.js') }}"></script>
+        <script src="{{asset('bootstrap/js/bootstrap.min.js') }}"></script>
+        <script src="{{asset('js/jquery.backstretch.min.js') }}"></script>
+        <script src="{{asset('js/scripts3.js') }}"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $.backstretch("{{ asset('img/backgrounds/3.jpg') }}");
+            });
+        </script>
         <!--[if lt IE 10]>
             <script src="assets/js/placeholder.js"></script>
         <![endif]-->

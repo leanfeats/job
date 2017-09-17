@@ -150,8 +150,7 @@
                     
                     <div class="col-sm-8 col-sm-offset-2">
                         <div class="footer-border"></div>
-                        <p>Made by jobs at <a href="#" target="_blank"><strong>Jobs</strong></a> 
-                            having a lot of fun. <i class="fa fa-smile-o"></i></p>
+                        <p class="m-0 text-center text-white">Copyright &copy; jobs 2017</p>
                     </div>
                     
                 </div>
