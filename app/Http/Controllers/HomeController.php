@@ -18,7 +18,7 @@ class HomeController extends Controller
     	$version = value($value);
 
     	switch ($version) {
-    		case 'v1':
+            case 'v1':
     			$version = 1;
     			break;
 
@@ -31,11 +31,11 @@ class HomeController extends Controller
     			break;
     		
     		default:
-    			$version = 1;
+    			$version = rand(1, 3);
     			break;
     	}
 
-    	$path = "v" . $version . '.' . "index";
+    	$path = "v" . $version . '.' . 'registration';
 
     	return view($path);
     }
