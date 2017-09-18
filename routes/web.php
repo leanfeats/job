@@ -24,3 +24,4 @@ Route::get('/api/user-from-token', function(){
 Route::middleware('jwt.auth')->get('/api/sample', function (Request $request) {
     return \App\User::all();
 });
+
