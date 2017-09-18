@@ -69,5 +69,24 @@ class RouteServiceProvider extends ServiceProvider
              ->middleware('api')
              ->namespace($this->namespace)
              ->group(base_path('routes/api.php'));
+
+        $groups = [
+            'users',
+            'jobs',
+            'locations',
+            'skills',
+            'categories',
+            'resumes'
+        ];
+
+        foreach($groups as $group){
+
+            Route::prefix('api')
+                 ->middleware('api')
+                 ->namespace($this->namespace)
+                 ->group(base_path('routes/api/'.$group.'.php'));
+        }
+
+
     }
 }
