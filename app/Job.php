@@ -6,14 +6,13 @@ use Illuminate\Database\Eloquent\Model;
 
 class Job extends Model
 {
-    // Table Name
-    protected $table = 'jobs';
-    // Primary Key
-    protected $primaryKey = 'id';
-    // Timestamps
-    public $timesamps = true;
+    public function company()
+    {
+        return $this->belongsTo(Company::class);
+    }
 
-    public function user(){
-    	return $this->belongsTo('App\User');
+    public function skills()
+    {
+        return $this->belongsToMany(Skill::class);
     }
 }

@@ -15,8 +15,7 @@
 //     return view('welcome');
 // });
 
-Route::get('/', 'JobsController@index');
-Route::resource('jobs', 'JobsController');
+
 
 
 // Route::get('/{version?}', 'HomeController@index');
