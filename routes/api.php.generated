@@ -1,6 +1,5 @@
 
 // ApiController
-Route::get('api/all-user', 'ApiController@getAllUser');
-Route::get('api/jobs', 'ApiController@getJobs');
-Route::post('api/jobs', 'ApiController@postJobs');
 Route::get('api/version', 'ApiController@getVersion');
+Route::get('api/all-user', 'ApiController@getAllUser');
+Route::post('api/generated-r-o-u-t-e-s', 'ApiController@postGeneratedROUTES');
