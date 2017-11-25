@@ -10,6 +10,6 @@ class HomeController extends Controller
     {
     	$data = [];
     	$data['version'] = $this->getVersion();
-    	return compact('data');
+    	return view('home.'.__FUNCTION__);
     }
 }
